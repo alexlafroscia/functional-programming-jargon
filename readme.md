@@ -199,7 +199,7 @@ greet() // "Hi, Brianne"
 
 ```
 
-The above example's it based on data stored outside of the function...
+The above example's is based on data stored outside of the function...
 
 ```js
 let greeting
