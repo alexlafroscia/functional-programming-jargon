@@ -185,19 +185,34 @@ greet('Brianne') // 'Hi, Brianne'
 
 ```
 
-As opposed to:
+As opposed to each of the following:
 
 ```js
 
-let greeting
+window.name = 'Brianne'
 
 const greet = () => {
-  greeting = 'Hi, ' + window.name
+  return 'Hi, ' + window.name
 }
 
 greet() // "Hi, Brianne"
 
 ```
+
+The above example's it based on data stored outside of the function...
+
+```js
+let greeting
+
+const greet = (name) => {
+  greeting = 'Hi, ' + name
+}
+
+greet()
+greeting // "Hi, Brianne"
+```
+
+... and this one modifies state outside of the function.
 
 ## Side effects
 
